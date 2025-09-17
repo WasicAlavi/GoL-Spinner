@@ -1,12 +1,51 @@
-# React + Vite
+# Game of Life Spinner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun **loading spinner** built with **React** and inspired by Conway’s Game of Life.  
+It animates oscillating patterns (like the **Pulsar**) inside a canvas and displays optional text underneath.  
+You can customize the **spinner color**, **background color**, and the **loading text**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Animated Conway’s Game of Life pattern as a spinner  
+- Customizable **spinner color**  
+- Customizable **background color**  
+- Optional loading **text message**  
+- Lightweight and reusable React component  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/game-of-life-spinner.git
+cd game-of-life-spinner
+npm install
+
+```
+🚀 Usage
+
+```bash
+import React from "react";
+import Spinner from "./Spinner";
+
+function App() {
+  return (
+    <div style={{ height: "100vh" }}>
+      <Spinner
+        text="Loading your data..."
+        color="hsl(200, 80%, 60%)"
+        backgroundColor="#000"
+      />
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+
